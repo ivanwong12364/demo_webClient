@@ -1,0 +1,144 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Hotel Search Styles */
+.hotel-search-container {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.08);
+  padding: 32px 24px 32px 24px;
+  margin-bottom: 40px;
+}
+
+.hotel-search-header {
+  text-align: center;
+  margin-bottom: 32px;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #1a237e;
+  letter-spacing: 1px;
+}
+
+.hotel-search-form .ant-form-item-label > label {
+  font-weight: 600;
+  color: #3b3b3b;
+}
+
+.hotel-search-table {
+  margin-top: 24px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.06);
+}
+
+.hotel-search-alert {
+  margin-bottom: 20px;
+}
+
+.hotel-search-tips {
+  background: #f0f7ff;
+  border: 1px solid #e3eafc;
+  border-radius: 10px;
+  margin-bottom: 24px;
+  padding: 18px 24px;
+  text-align: left;
+}
+
+/* Travel Package Styles */
+.travel-package-section {
+  padding: 32px 0 0 0;
+  background: #fafbfc;
+}
+
+.travel-package-header {
+  text-align: center;
+  margin-bottom: 32px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1565c0;
+}
+
+.travel-package-card {
+  border-radius: 16px !important;
+  box-shadow: 0 4px 24px 0 rgba(21,101,192,0.08);
+  transition: box-shadow 0.2s;
+  margin-bottom: 24px;
+}
+.travel-package-card:hover {
+  box-shadow: 0 8px 32px 0 rgba(21,101,192,0.16);
+  border-color: #1890ff;
+}
+.travel-package-card .ant-card-actions {
+  background: #f6f6f6;
+  border-radius: 0 0 16px 16px;
+}
+
+.travel-package-price {
+  text-align: center;
+  padding: 12px;
+  background-color: #f6f6f6;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1890ff;
+}
+
+.travel-package-meta {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.travel-package-meta .anticon {
+  margin-right: 8px;
+}
+
+@media (max-width: 900px) {
+  .hotel-search-container, .travel-package-section {
+    padding: 16px 4px;
+  }
+  .travel-package-header, .hotel-search-header {
+    font-size: 1.3rem;
+  }
+}
