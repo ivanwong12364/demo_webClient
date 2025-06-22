@@ -18,6 +18,8 @@ interface Hotel {
   imageurl: string;
   agencyid: number;
   description: string;
+  location:string;
+  price:number;
   links?: {
     likes: string;
     fav: string;
@@ -98,19 +100,13 @@ const DetailHotel = () => {
         <Row gutter={[32, 32]}>
           {/* Image Column */}
           <Col xs={24} md={10}>
-            <img 
-              alt="Hotel" 
-              src={hotel.imageurl} 
-              style={{ width: '100%', borderRadius: '8px', objectFit: 'cover' }}
-              onError={(e) => { (e.target as HTMLImageElement).src = 'https://via.placeholder.com/400x400?text=No+Image'; }} 
-            />
+            
           </Col>
 
           {/* Details Column */}
           <Col xs={24} md={14}>
             <Title level={3}>{hotel.title}</Title>
-            <Tag color="blue">ID: {hotel.id}</Tag>
-            <Tag color="green">Agency ID: {hotel.agencyid}</Tag>
+           
             
             <Divider />
 
@@ -126,6 +122,13 @@ const DetailHotel = () => {
               <Descriptions.Item label="Detailed Description">
                 <Paragraph>{hotel.description}</Paragraph>
               </Descriptions.Item>
+                 <Descriptions.Item label="location">
+                <Paragraph>{hotel.location}</Paragraph>
+              </Descriptions.Item>
+                 <Descriptions.Item label="price/person">
+                <Paragraph>${hotel.price}</Paragraph>
+              </Descriptions.Item>
+
             </Descriptions>
 
             <Divider />

@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 const API_BASE_URL = 'https://api.makcorps.com';
-const API_KEY = '68511be966a5d60909a50715';
+const API_KEY = '6857ccfad63a2500de8d3ba0';
 
 // Interfaces
 export interface Vendor {
