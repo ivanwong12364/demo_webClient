@@ -8,6 +8,9 @@ import axios from 'axios';
 import { RollbackOutlined, LoadingOutlined, CloseSquareOutlined, CloseSquareFilled, EditOutlined, HomeOutlined } from '@ant-design/icons';
 import { getCurrentUser } from "../services/auth.service";
 
+
+
+//updated UI
 const { Title, Paragraph, Text } = Typography;
 
 interface Hotel {
